@@ -3,9 +3,15 @@ package main
 import "fmt"
 
 func main() {
-	card := newCard()
+	cards := []string{"Ace of diamonds", newCard()}
+	cards = append(cards, "Six of spades")
+	//append returns a new array, does not modify cards() slice
 
-	fmt.Println(card)
+	for i, card := range cards {
+		fmt.Println(i, card)
+	}
+
+	fmt.Println(cards)
 }
 
 func newCard() string {
