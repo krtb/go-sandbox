@@ -4,5 +4,6 @@ package main
 
 type deck []string
 
+//CREATE NEW TYPE OF DECK WHICH IS SLICE OF STRINGS
 // type of deck is borrowing all of 'string' behavior
 // will store all logic in this file
