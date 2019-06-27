@@ -7,9 +7,7 @@ func main() {
 	cards = append(cards, "Six of spades")
 	//append returns a new array, does not modify cards() slice
 
-	for i, card := range cards {
-		fmt.Println(i, card)
-	}
+	cards.print()
 
 	fmt.Println(cards)
 }
