@@ -5,10 +5,6 @@ package main
 
 import "fmt"
 
-//used to import standard library package available to the go language
-//fmt library used to print out information by the terminal
-//can import in packages authored by other engineers
-
 func main() {
 	fmt.Println("Hi, There!")
 }
@@ -36,7 +32,16 @@ func main() {
 // any other name is for a reusable package, main packages are for exe type packages
 
 //TODO: what does 'import fmt' mean?
+//used to import standard library package available to the go language
+//fmt library used to print out information by the terminal
+//can import in packages authored by other engineers
+//golang.org/pkg for more information on a specific package
 
 //TODO: what is a func?
+// function like in any other language
+// declaring a function, anything after `func` is the name
 
 //TODO: how is the 'main.go' file organized?
+// FIRST: package declaration
+// SECOND: import other packages that we need
+// THIRD: declare functions, tell GO to do things
