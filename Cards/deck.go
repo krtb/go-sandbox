@@ -32,3 +32,10 @@ func (d deck) print() {
 		fmt.Println(i, card)
 	}
 }
+
+//can call the deal function with the first arg of type deck, and the second arg of type int
+// go has support for returning multiple values from one function
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:] // two seperate return values inside of one value
+
+}
